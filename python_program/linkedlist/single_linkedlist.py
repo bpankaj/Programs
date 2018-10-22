@@ -18,6 +18,7 @@ class Node:
 	def hasNext(self):
 		return self.next != None
 
+
 class LinkedList:
 	def __init__(self):
 		self.length = 0
@@ -81,6 +82,13 @@ class LinkedList:
 			last = current
 			current = nextNode
 		self.head = last
+
+	def reverse_list1(self):
+		new_head = None
+		while self.head:
+			self.head.next, self.head, new_head = new_head, self.head.next, self.head # look Ma, no temp vars!
+			print new_head.getData()
+		return new_head
 
 	def delete_at_first(self):
 		if self.length == 0:

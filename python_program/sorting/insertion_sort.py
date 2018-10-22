@@ -5,4 +5,4 @@ def insertion_sort(list_arr):
 		while j > = 0 and key < list_arr[j]:
 			list_arr[j+1] = list_arr[j]
 			j -= 1
-		list_arr[j+1] = key
+		list_arr[j+1] = key						

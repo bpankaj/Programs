@@ -8,7 +8,7 @@ def binary_search_iterative(numberlist, value):
 		if numberlist[mid] > value:
 			high = mid - 1
 		elif numberlist[mid] < value:
-			low = mid - 1
+			low = mid + 1
 		else:
 			return mid
 	return -1

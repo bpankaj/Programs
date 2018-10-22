@@ -7,7 +7,7 @@ class Node:
 	def setData(self, data):
 		self.data = data
 
-	def setData(self):
+	def getData(self):
 		return self.data
 
 	def setNext(self, next):

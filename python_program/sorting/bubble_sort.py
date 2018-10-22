@@ -5,7 +5,7 @@ def bubble_sort(list_arr):
 			if list_arr[j] > list_arr[j+1]:
 				list_arr[j], list_arr[j+1] = list_arr[j+1], list_arr[j]
 
-# Above program have complexity O(n2).
+# Above program have complexity O(n2). This is inplace sorting algorithm
 
 def bubble_sort1(list_arr):
 	n = len(list_arr)
